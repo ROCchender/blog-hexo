@@ -281,6 +281,8 @@ dfn {
 }
 [class*=soft-size--].soft-size--round {
   --radius: 50%;
+  width: 45px; /* 头像 */
+  height: 45px; /* 头像 */
 }
 [class*=soft-style--] {
   transition: border-radius 0.3s ease, box-shadow 0.3s ease, background-image 0.3s ease;
@@ -1344,4 +1346,79 @@ html.show-mobile-nav .navbar-list {
   .content-container.post-container .widget-info {
     display: none;
   }
+}
+/* GitHub卡片完整样式 */
+.card-github {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+}
+.card-github .gc-titlebar {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background: #f6f8fa;
+  border-bottom: 1px solid #e1e4e8;
+}
+.card-github .gc-titlebar .gc-titlebar-left {
+  display: flex;
+  align-items: center;
+}
+.card-github .gc-titlebar .gc-titlebar-left .gc-owner {
+  display: flex;
+  align-items: center;
+}
+.card-github .gc-titlebar .gc-titlebar-left .gc-owner .gc-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background-size: cover;
+}
+.card-github .gc-titlebar .gc-titlebar-left .gc-owner .gc-user {
+  font-weight: 600;
+  color: #0366d6;
+}
+.card-github .gc-titlebar .gc-titlebar-left .gc-divider {
+  margin: 0 6px;
+  color: #d1d5da;
+}
+.card-github .gc-titlebar .gc-titlebar-left .gc-repo {
+  font-weight: 600;
+}
+.card-github .gc-titlebar .github-logo {
+  margin-left: auto;
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjMjdDMkUyIiBkPSJNMzM2IDM1MmMtMTYuNSAwLTMwLTEzLjUtMzAtMzBzMTMuNS0zMCAzMC0zMGMxNi41IDAgMzAgMTMuNSAzMCAzMFMzNTIuNSAzNTIgMzM2IDM1MnptMTYwLTMyYy0xNi41IDAtMzAtMTMuNS0zMC0zMFMzMjAuNSAyODAgMzM2IDI4MHMyOS41IDEzLjUgMzAgMzBzLTEzLjUgMzAtMzAgMzBjLTE2LjUgMC0zMC0xMy41LTMwLTMyem0xNi0xNjBjMC00NC4yLTMyLjgtODAtNzItODBjLTQwIDAtNzIgMzUuOC03MiA4MFMxOTYuMiAyNDAgMjM2IDI0MGMzOS4yIDAgNzItMzUuOCA3Mi04MFMyNzUuMiA2NCAyMzYgNjR6bS0yMDggMzJjLTkuMyAwLTE3LjEtNy44LTE3LjEtMTdsMC02NGMwLTkuMyA3LjgtMTcgMTcuMS0xN2g5NnYtMjhjMC05LjMtNy44LTE3LTE3LjEtMTdoLTY0Yy05LjMgMC0xNy4xIDcuOC0xNy4xIDE3djI4aC02NGMtOS4zIDAtMTcuMSA3LjgtMTcuMSAxN3Y2NGMwIDkuMyA3LjggMTcgMTcuMSAxN2g5NnoiLz48L3N2Zz4=");
+  background-repeat: no-repeat;
+}
+.card-github .gc-description {
+  padding: 16px;
+  font-size: 14px;
+  color: #586069;
+  border-bottom: 1px solid #e1e4e8;
+}
+.card-github .gc-infobar {
+  display: flex;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #586069;
+}
+.card-github .gc-infobar > div {
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+}
+.card-github .gc-infobar .gc-language {
+  margin-left: auto;
+  padding: 2px 6px;
+  background: #e1e4e8;
+  border-radius: 4px;
 }
