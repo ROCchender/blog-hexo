@@ -140,3 +140,15 @@ function handleLazyBG () {
     })
   }
 }
+
+// 代码复制功能
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const code = this.nextElementSibling.textContent;
+      navigator.clipboard.writeText(code);
+      this.textContent = '已复制!';
+      setTimeout(() => this.textContent = '复制', 2000);
+    });
+  });
+});

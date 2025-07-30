@@ -22,7 +22,7 @@
 
   
 
-  <title>个人简介（很随便） | chender&#39;s blog</title>
+  <title>一个不错的图床搭建选择 | chender&#39;s blog</title>
 
   
 
@@ -46,7 +46,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://youke1.picui.cn/s1/2025/07/30/6888f78dce5c5.png)"></div>
+    <div class="post-image" style="background-image: url(/img/banner.jpg)"></div>
   
 
   <!-- navbar -->
@@ -99,34 +99,31 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">个人简介（很随便）</h1>
+          <h1 class="title-wrap">一个不错的图床搭建选择</h1>
           <h2 class="title-sub-wrap">
             <strong>chender</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2025-07-24T18:14:37.680Z" itemprop="datePublished">2025-07-25</time>
+            <time  class="article-date" datetime="2025-07-29T16:20:39.949Z" itemprop="datePublished">2025-07-30</time>
           </h2>
           
-            <h2 class="last-time">
-              <span>最后更新于</span>
-              <time  class="article-updated" datetime="2025-07-29T16:35:48.334Z" itemprop="dateUpdated">2025-07-30</time>
-            </h2>
           
-          
-            <h2 id="/about/" class="title-sub-wrap leancloud_visitors" data-flag-title="个人简介（很随便）">
+            <h2 id="/2025/07/30/%E5%9B%BE%E5%BA%8A%E9%80%89%E6%8B%A9or%E6%90%AD%E5%BB%BA/" class="title-sub-wrap leancloud_visitors" data-flag-title="一个不错的图床搭建选择">
               <em>文章访问量</em>
               <i class="leancloud-visitors-count"></i>
             </h2>
           
           <ul class="wrap-list dark">
   
-    <li><a href="/categories/%E4%BB%8B%E7%BB%8D/">📒 介绍</a></li>
+    <li><a href="/categories/%E6%95%99%E7%A8%8B/">📒 教程</a></li>
     
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/">🏷️ 个人简介</a></li>
+    <li><a href="/tags/%E5%9B%BE%E5%BA%8A/">🏷️ 图床</a></li>
   
-    <li><a href="/tags/%E5%85%B3%E4%BA%8E/">🏷️ 关于</a></li>
+    <li><a href="/tags/%E8%87%AA%E5%BB%BA%E6%9C%8D%E5%8A%A1/">🏷️ 自建服务</a></li>
+  
+    <li><a href="/tags/Cloudflare/">🏷️ Cloudflare</a></li>
   
 </ul>
         </div>
@@ -150,56 +147,359 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>chender</p>
-<ul>
-<li>软件开发 &#x2F; 嵌入式 &#x2F; 动画制作 &#x2F; 游戏开发</li>
-<li>2004&#x2F;1&#x2F;4 中国广东</li>
-<li>GitHub: <a target="_blank" rel="noopener" href="https://github.com/ROCchender">ROCchender</a></li>
-<li>邮箱：<a href="mailto:&#50;&#56;&#x37;&#54;&#53;&#x36;&#x33;&#x34;&#54;&#x32;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#109;">&#50;&#56;&#x37;&#54;&#53;&#x36;&#x33;&#x34;&#54;&#x32;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#109;</a></li>
+        <h1 id="Backblaze-B2-Cloudflare-Workers-图床搭建方案"><a href="#Backblaze-B2-Cloudflare-Workers-图床搭建方案" class="headerlink" title="Backblaze B2 + Cloudflare Workers 图床搭建方案"></a>Backblaze B2 + Cloudflare Workers 图床搭建方案</h1><h2 id="为什么选择这个方案？"><a href="#为什么选择这个方案？" class="headerlink" title="为什么选择这个方案？"></a>为什么选择这个方案？</h2><p>因为白嫖快乐(<em>´∀ ˋ</em>) ，虽然我在用服务器(๑´ㅂ&#96;๑)</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol>
+<li><strong>需要注册账号</strong><ul>
+<li><a target="_blank" rel="noopener" href="https://www.backblaze.com/">Backblaze</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cloudflare.com/">Cloudflare</a></li>
 </ul>
-<h2 id="自我评价"><a href="#自我评价" class="headerlink" title="自我评价"></a>自我评价</h2><h2 id="热爱技术，喜欢钻研新领域，乐于团队协作，追求高效与创新。希望未来能参与更多有挑战性的项目，与优秀的伙伴共同成长。平时喜欢打端游和主机游戏，基本什么游戏都有打，最常玩fps类游戏，运动类也是基本什么都会，其中最喜欢棒球和乒乓球。"><a href="#热爱技术，喜欢钻研新领域，乐于团队协作，追求高效与创新。希望未来能参与更多有挑战性的项目，与优秀的伙伴共同成长。平时喜欢打端游和主机游戏，基本什么游戏都有打，最常玩fps类游戏，运动类也是基本什么都会，其中最喜欢棒球和乒乓球。" class="headerlink" title="热爱技术，喜欢钻研新领域，乐于团队协作，追求高效与创新。希望未来能参与更多有挑战性的项目，与优秀的伙伴共同成长。平时喜欢打端游和主机游戏，基本什么游戏都有打，最常玩fps类游戏，运动类也是基本什么都会，其中最喜欢棒球和乒乓球。"></a>热爱技术，喜欢钻研新领域，乐于团队协作，追求高效与创新。希望未来能参与更多有挑战性的项目，与优秀的伙伴共同成长。<br>平时喜欢打端游和主机游戏，基本什么游戏都有打，最常玩fps类游戏，运动类也是基本什么都会，其中最喜欢棒球和乒乓球。</h2><h2 id="本网站搭建"><a href="#本网站搭建" class="headerlink" title="本网站搭建"></a>本网站搭建</h2><a id="hexo-github-card" class="card-github no-styling" href="https://github.com/hexojs/hexo" target="_blank" repo="hexojs/hexo">
-  <div class="gc-titlebar">
-    <div class="gc-titlebar-left">
-      <div class="gc-owner">
-        <div id="hexo-avatar" class="gc-avatar"></div>
-        <div class="gc-user">hexojs</div>
-      </div>
-      <div class="gc-divider">/</div>
-      <div class="gc-repo">hexo</div>
-    </div>
-    <div class="github-logo"></div>
-  </div>
-  <div id="hexo-description" class="gc-description">A fast, simple & powerful blog framework, powered by Node.js.</div>
-  <div class="gc-infobar">
-    <div id="hexo-stars" class="gc-stars">40.6K</div>
-    <div id="hexo-forks" class="gc-forks">4.9K</div>
-    <div id="hexo-license" class="gc-license">MIT</div>
-    <span id="hexo-language" class="gc-language">JavaScript</span>
-  </div>
-  <script id="hexo-card-script" type="text/javascript" defer>
-    fetch('https://api.github.com/repos/hexojs/hexo', { referrerPolicy: "no-referrer" })
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('hexo-description').innerText = data.description?.replace(/:[a-zA-Z0-9_]+:/g, '') || "Description not set";
-        document.getElementById('hexo-language').innerText = data.language;
-        document.getElementById('hexo-forks').innerText = Intl.NumberFormat('en-us', { notation: "compact", maximumFractionDigits: 1 }).format(data.forks).replaceAll(" ", '');
-        document.getElementById('hexo-stars').innerText = Intl.NumberFormat('en-us', { notation: "compact", maximumFractionDigits: 1 }).format(data.stargazers_count).replaceAll(" ", '');
-        const avatarEl = document.getElementById('hexo-avatar');
-        avatarEl.style.backgroundImage = 'url(' + data.owner.avatar_url + ')';
-        avatarEl.style.backgroundColor = 'transparent';
-        document.getElementById('hexo-license').innerText = data.license?.spdx_id || "no-license";
-        document.getElementById('hexo-github-card').classList.remove("fetch-waiting");
-      })
-      .catch(err => {
-        const c = document.getElementById('hexo-github-card');
-        c?.classList.add("fetch-error");
-      })
-  </script>
-</a>
+</li>
+</ol>
+<h2 id="详细搭建步骤"><a href="#详细搭建步骤" class="headerlink" title="详细搭建步骤"></a>详细搭建步骤</h2><h3 id="第一步：配置Backblaze-B2"><a href="#第一步：配置Backblaze-B2" class="headerlink" title="第一步：配置Backblaze B2"></a>第一步：配置Backblaze B2</h3><h4 id="1-1-创建私密桶"><a href="#1-1-创建私密桶" class="headerlink" title="1.1 创建私密桶"></a>1.1 创建私密桶</h4><p>登录Backblaze控制台，进入B2 Cloud Storage：</p>
+<p><img src="https://pic3.zhimg.com/v2-a992acc2d94279b26bb2ad896bdeeb6e_1440w.jpg" alt="创建私密桶"><br><img src="https://pic3.zhimg.com/v2-e3ac0d224a00a91745ee3aee25558e4a_1440w.jpg" alt="创建私密桶"></p>
+<ul>
+<li>桶名称：<code>der-a-test-bucket</code> （桶名称是随意的）</li>
+<li>桶类型：选择<code>Private</code>（私密桶）</li>
+<li>地区：建议选择<code>US West (Oregon)</code></li>
+</ul>
+<p>创建后记录<strong>Endpoint</strong>（如我的是<code>https://s3.us-west-004.backblazeb2.com</code>）<mcreference link="https://pic4.zhimg.com/v2-03a1fb65563da3810718e91fbaba9233_1440w.jpg" index="0"></mcreference><br><img src="https://pic4.zhimg.com/v2-03a1fb65563da3810718e91fbaba9233_1440w.jpg" alt="记录Endpoint信息"></p>
+<p>点击 Lifecycle Settings ，选择 Keep only the last version of the file 。点击 Update Bucket 按钮。<br><img src="https://pic4.zhimg.com/v2-9bdc7e5994b21f5982cdb8eb136a3a8b_1440w.jpg" alt="Lifecycle Settings信息"></p>
+<h3 id="第二步：创建应用密钥"><a href="#第二步：创建应用密钥" class="headerlink" title="第二步：创建应用密钥"></a>第二步：创建应用密钥</h3><p>进入<strong>Application Keys</strong>页面：</p>
+<p><img src="https://pic1.zhimg.com/v2-e4ad31210426e798b617e1d901aa80f6_1440w.jpg" alt="创建应用密钥"><br><img src="https://pic3.zhimg.com/v2-a0df699c9b3a7ed97f367f69f0eadebe_1440w.jpg" alt="应用密钥设置"></p>
+<ul>
+<li>密钥名称：<code>chenderupadtstest</code>（钥匙名称也是随意的）</li>
+<li>权限设置：勾选<code>read</code>and<code>write</code></li>
+<li>桶访问：选择刚才创建的私密桶</li>
+</ul>
+<p>⚠️ <strong>重要</strong>：创建后立即复制<code>keyID</code>和<code>applicationKey</code>，页面关闭后无法再次查看<br><img src="https://pic1.zhimg.com/v2-8c789b28804c309d712b3e3875fd161c_1440w.jpg" alt="密钥"></p>
+<h3 id="第三步：部署Cloudflare-Workers"><a href="#第三步：部署Cloudflare-Workers" class="headerlink" title="第三步：部署Cloudflare Workers"></a>第三步：部署Cloudflare Workers</h3><h4 id="3-1-创建Worker"><a href="#3-1-创建Worker" class="headerlink" title="3.1 创建Worker"></a>3.1 创建Worker</h4><p>登录Cloudflare控制台，找到左侧菜单的<strong>计算(Workers)<strong>点击进入</strong>Workers和Pages</strong>：</p>
+<p><img src="https://pic2.zhimg.com/v2-0bbbe85657ac627f5e94c701aa98a61f_1440w.jpg" alt="创建Worker"><br><img src="https://pic2.zhimg.com/v2-c9a362ff64c1ef3ded02ad86e6bc2f53_1440w.jpg" alt="选择从 Hello World！开始 模板"></p>
+<ul>
+<li>点击「创建」→「创建Worker」→「选择从 Hello World！开始 模板」</li>
+<li>Worker 名称：<code>test</code>（可自定义）</li>
+<li>点击「部署」后进入编辑界面</li>
+</ul>
+<h4 id="3-2-配置Worker代码"><a href="#3-2-配置Worker代码" class="headerlink" title="3.2 配置Worker代码"></a>3.2 配置Worker代码</h4><p>项目部署好后，我们点击 <strong>编辑代码</strong> 按钮，将下面的代码替换掉左侧编辑区 worker.js 中的全部代码，然后点击右上角的部署即可</p>
+<!-- 代码块容器 -->
+<div class="code-container">
+  <button class="copy-btn">复制</button>
+  <div class="code-content">
+```javascript
+// node_modules/aws4fetch/dist/aws4fetch.esm.mjs
+var encoder = new TextEncoder();
+var HOST_SERVICES = {
+  appstream2: "appstream",
+  cloudhsmv2: "cloudhsm",
+  email: "ses",
+  marketplace: "aws-marketplace",
+  mobile: "AWSMobileHubService",
+  pinpoint: "mobiletargeting",
+  queue: "sqs",
+  "git-codecommit": "codecommit",
+  "mturk-requester-sandbox": "mturk-requester",
+  "personalize-runtime": "personalize"
+};
+var UNSIGNABLE_HEADERS = /* @__PURE__ */ new Set([
+  "authorization",
+  "content-type",
+  "content-length",
+  "user-agent",
+  "presigned-expires",
+  "expect",
+  "x-amzn-trace-id",
+  "range",
+  "connection"
+]);
+var AwsClient = class {
+  constructor({ accesskeyID, secretAccessKey, sessionToken, service, region, cache, retries, initRetryMs }) {
+    if (accesskeyID == null)
+      throw new TypeError("accesskeyID is a required option");
+    if (secretAccessKey == null)
+      throw new TypeError("secretAccessKey is a required option");
+    this.accesskeyID = accesskeyID;
+    this.secretAccessKey = secretAccessKey;
+    this.sessionToken = sessionToken;
+    this.service = service;
+    this.region = region;
+    this.cache = cache || /* @__PURE__ */ new Map();
+    this.retries = retries != null ? retries : 10;
+    this.initRetryMs = initRetryMs || 50;
+  }
+  async sign(input, init) {
+    if (input instanceof Request) {
+      const { method, url, headers, body } = input;
+      init = Object.assign({ method, url, headers }, init);
+      if (init.body == null && headers.has("Content-Type")) {
+        init.body = body != null && headers.has("X-Amz-Content-Sha256") ? body : await input.clone().arrayBuffer();
+      }
+      input = url;
+    }
+    const signer = new AwsV4Signer(Object.assign({ url: input }, init, this, init && init.aws));
+    const signed = Object.assign({}, init, await signer.sign());
+    delete signed.aws;
+    try {
+      return new Request(signed.url.toString(), signed);
+    } catch (e) {
+      if (e instanceof TypeError) {
+        return new Request(signed.url.toString(), Object.assign({ duplex: "half" }, signed));
+      }
+      throw e;
+    }
+  }
+  async fetch(input, init) {
+    for (let i = 0; i <= this.retries; i++) {
+      const fetched = fetch(await this.sign(input, init));
+      if (i === this.retries) {
+        return fetched;
+      }
+      const res = await fetched;
+      if (res.status < 500 && res.status !== 429) {
+        return res;
+      }
+      await new Promise((resolve) => setTimeout(resolve, Math.random() * this.initRetryMs * Math.pow(2, i)));
+    }
+    throw new Error("An unknown error occurred, ensure retries is not negative");
+  }
+};
+var AwsV4Signer = class {
+  constructor({ method, url, headers, body, accesskeyID, secretAccessKey, sessionToken, service, region, cache, datetime, signQuery, appendSessionToken, allHeaders, singleEncode }) {
+    if (url == null)
+      throw new TypeError("url is a required option");
+    if (accesskeyID == null)
+      throw new TypeError("accesskeyID is a required option");
+    if (secretAccessKey == null)
+      throw new TypeError("secretAccessKey is a required option");
+    this.method = method || (body ? "POST" : "GET");
+    this.url = new URL(url);
+    this.headers = new Headers(headers || {});
+    this.body = body;
+    this.accesskeyID = accesskeyID;
+    this.secretAccessKey = secretAccessKey;
+    this.sessionToken = sessionToken;
+    let guessedService, guessedRegion;
+    if (!service || !region) {
+      [guessedService, guessedRegion] = guessServiceRegion(this.url, this.headers);
+    }
+    this.service = service || guessedService || "";
+    this.region = region || guessedRegion || "us-east-1";
+    this.cache = cache || /* @__PURE__ */ new Map();
+    this.datetime = datetime || (/* @__PURE__ */ new Date()).toISOString().replace(/[:-]|\.\d{3}/g, "");
+    this.signQuery = signQuery;
+    this.appendSessionToken = appendSessionToken || this.service === "iotdevicegateway";
+    this.headers.delete("Host");
+    if (this.service === "s3" && !this.signQuery && !this.headers.has("X-Amz-Content-Sha256")) {
+      this.headers.set("X-Amz-Content-Sha256", "UNSIGNED-PAYLOAD");
+    }
+    const params = this.signQuery ? this.url.searchParams : this.headers;
+    params.set("X-Amz-Date", this.datetime);
+    if (this.sessionToken && !this.appendSessionToken) {
+      params.set("X-Amz-Security-Token", this.sessionToken);
+    }
+    this.signableHeaders = ["host", ...this.headers.keys()].filter((header) => allHeaders || !UNSIGNABLE_HEADERS.has(header)).sort();
+    this.signedHeaders = this.signableHeaders.join(";");
+    this.canonicalHeaders = this.signableHeaders.map((header) => header + ":" + (header === "host" ? this.url.host : (this.headers.get(header) || "").replace(/\s+/g, " "))).join("\n");
+    this.credentialString = [this.datetime.slice(0, 8), this.region, this.service, "aws4_request"].join("/");
+    if (this.signQuery) {
+      if (this.service === "s3" && !params.has("X-Amz-Expires")) {
+        params.set("X-Amz-Expires", "86400");
+      }
+      params.set("X-Amz-Algorithm", "AWS4-HMAC-SHA256");
+      params.set("X-Amz-Credential", this.accesskeyID + "/" + this.credentialString);
+      params.set("X-Amz-SignedHeaders", this.signedHeaders);
+    }
+    if (this.service === "s3") {
+      try {
+        this.encodedPath = decodeURIComponent(this.url.pathname.replace(/\+/g, " "));
+      } catch (e) {
+        this.encodedPath = this.url.pathname;
+      }
+    } else {
+      this.encodedPath = this.url.pathname.replace(/\/+/g, "/");
+    }
+    if (!singleEncode) {
+      this.encodedPath = encodeURIComponent(this.encodedPath).replace(/%2F/g, "/");
+    }
+    this.encodedPath = encodeRfc3986(this.encodedPath);
+    const seenKeys = /* @__PURE__ */ new Set();
+    this.encodedSearch = [...this.url.searchParams].filter(([k]) => {
+      if (!k)
+        return false;
+      if (this.service === "s3") {
+        if (seenKeys.has(k))
+          return false;
+        seenKeys.add(k);
+      }
+      return true;
+    }).map((pair) => pair.map((p) => encodeRfc3986(encodeURIComponent(p)))).sort(([k1, v1], [k2, v2]) => k1 < k2 ? -1 : k1 > k2 ? 1 : v1 < v2 ? -1 : v1 > v2 ? 1 : 0).map((pair) => pair.join("=")).join("&");
+  }
+  async sign() {
+    if (this.signQuery) {
+      this.url.searchParams.set("X-Amz-Signature", await this.signature());
+      if (this.sessionToken && this.appendSessionToken) {
+        this.url.searchParams.set("X-Amz-Security-Token", this.sessionToken);
+      }
+    } else {
+      this.headers.set("Authorization", await this.authHeader());
+    }
+    return {
+      method: this.method,
+      url: this.url,
+      headers: this.headers,
+      body: this.body
+    };
+  }
+  async authHeader() {
+    return [
+      "AWS4-HMAC-SHA256 Credential=" + this.accesskeyID + "/" + this.credentialString,
+      "SignedHeaders=" + this.signedHeaders,
+      "Signature=" + await this.signature()
+    ].join(", ");
+  }
+  async signature() {
+    const date = this.datetime.slice(0, 8);
+    const cacheKey = [this.secretAccessKey, date, this.region, this.service].join();
+    let kCredentials = this.cache.get(cacheKey);
+    if (!kCredentials) {
+      const kDate = await hmac("AWS4" + this.secretAccessKey, date);
+      const kRegion = await hmac(kDate, this.region);
+      const kService = await hmac(kRegion, this.service);
+      kCredentials = await hmac(kService, "aws4_request");
+      this.cache.set(cacheKey, kCredentials);
+    }
+    return buf2hex(await hmac(kCredentials, await this.stringToSign()));
+  }
+  async stringToSign() {
+    return [
+      "AWS4-HMAC-SHA256",
+      this.datetime,
+      this.credentialString,
+      buf2hex(await hash(await this.canonicalString()))
+    ].join("\n");
+  }
+  async canonicalString() {
+    return [
+      this.method.toUpperCase(),
+      this.encodedPath,
+      this.encodedSearch,
+      this.canonicalHeaders + "\n",
+      this.signedHeaders,
+      await this.hexBodyHash()
+    ].join("\n");
+  }
+  async hexBodyHash() {
+    let hashHeader = this.headers.get("X-Amz-Content-Sha256") || (this.service === "s3" && this.signQuery ? "UNSIGNED-PAYLOAD" : null);
+    if (hashHeader == null) {
+      if (this.body && typeof this.body !== "string" && !("byteLength" in this.body)) {
+        throw new Error("body must be a string, ArrayBuffer or ArrayBufferView, unless you include the X-Amz-Content-Sha256 header");
+      }
+      hashHeader = buf2hex(await hash(this.body || ""));
+    }
+    return hashHeader;
+  }
+};
+async function hmac(key, string) {
+  const cryptoKey = await crypto.subtle.importKey(
+    "raw",
+    typeof key === "string" ? encoder.encode(key) : key,
+    { name: "HMAC", hash: { name: "SHA-256" } },
+    false,
+    ["sign"]
+  );
+  return crypto.subtle.sign("HMAC", cryptoKey, encoder.encode(string));
+}
+async function hash(content) {
+  return crypto.subtle.digest("SHA-256", typeof content === "string" ? encoder.encode(content) : content);
+}
+function buf2hex(buffer) {
+  return Array.prototype.map.call(new Uint8Array(buffer), (x) => ("0" + x.toString(16)).slice(-2)).join("");
+}
+function encodeRfc3986(urlEncodedStr) {
+  return urlEncodedStr.replace(/[!'()*]/g, (c) => "%" + c.charCodeAt(0).toString(16).toUpperCase());
+}
+function guessServiceRegion(url, headers) {
+  const { hostname, pathname } = url;
+  if (hostname.endsWith(".r2.cloudflarestorage.com")) {
+    return ["s3", "auto"];
+  }
+  if (hostname.endsWith(".backblazeb2.com")) {
+    const match2 = hostname.match(/^(?:[^.]+\.)?s3\.([^.]+)\.backblazeb2\.com$/);
+    return match2 != null ? ["s3", match2[1]] : ["", ""];
+  }
+  const match = hostname.replace("dualstack.", "").match(/([^.]+)\.(?:([^.]*)\.)?amazonaws\.com(?:\.cn)?$/);
+  let [service, region] = (match || ["", ""]).slice(1, 3);
+  if (region === "us-gov") {
+    region = "us-gov-west-1";
+  } else if (region === "s3" || region === "s3-accelerate") {
+    region = "us-east-1";
+    service = "s3";
+  } else if (service === "iot") {
+    if (hostname.startsWith("iot.")) {
+      service = "execute-api";
+    } else if (hostname.startsWith("data.jobs.iot.")) {
+      service = "iot-jobs-data";
+    } else {
+      service = pathname === "/mqtt" ? "iotdevicegateway" : "iotdata";
+    }
+  } else if (service === "autoscaling") {
+    const targetPrefix = (headers.get("X-Amz-Target") || "").split(".")[0];
+    if (targetPrefix === "AnyScaleFrontendService") {
+      service = "application-autoscaling";
+    } else if (targetPrefix === "AnyScaleScalingPlannerFrontendService") {
+      service = "autoscaling-plans";
+    }
+  } else if (region == null && service.startsWith("s3-")) {
+    region = service.slice(3).replace(/^fips-|^external-1/, "");
+    service = "s3";
+  } else if (service.endsWith("-fips")) {
+    service = service.slice(0, -5);
+  } else if (region && /-\d$/.test(service) && !/-\d$/.test(region)) {
+    [service, region] = [region, service];
+  }
+  return [HOST_SERVICES[service] || service, region];
+}
 
-<h3 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h3><p>本博客主题改自Flexblock，话糙理不糙，都碉堡了。</p>
+<p>&#x2F;&#x2F; index.js<br>var UNSIGNABLE_HEADERS2 &#x3D; [<br>  &#x2F;&#x2F; These headers appear in the request, but are not passed upstream<br>  “x-forwarded-proto”,<br>  “x-real-ip”,<br>  &#x2F;&#x2F; We can’t include accept-encoding in the signature because Cloudflare<br>  &#x2F;&#x2F; sets the incoming accept-encoding header to “gzip, br”, then modifies<br>  &#x2F;&#x2F; the outgoing request to set accept-encoding to “gzip”.<br>  &#x2F;&#x2F; Not cool, Cloudflare!<br>  “accept-encoding”<br>];<br>var HTTPS_PROTOCOL &#x3D; “https:”;<br>var HTTPS_PORT &#x3D; “443”;<br>var RANGE_RETRY_ATTEMPTS &#x3D; 3;<br>function filterHeaders(headers, env) {<br>  return new Headers(Array.from(headers.entries()).filter(<br>    (pair) &#x3D;&gt; !UNSIGNABLE_HEADERS2.includes(pair[0]) &amp;&amp; !pair[0].startsWith(“cf-“) &amp;&amp; !(“ALLOWED_HEADERS” in env &amp;&amp; !env.ALLOWED_HEADERS.includes(pair[0]))<br>  ));<br>}<br>var my_proxy_default &#x3D; {<br>  async fetch(request, env) {<br>    if (![“GET”, “HEAD”].includes(request.method)) {<br>      return new Response(null, {<br>        status: 405,<br>        statusText: “Method Not Allowed”<br>      });<br>    }<br>    const url &#x3D; new URL(request.url);<br>    url.protocol &#x3D; HTTPS_PROTOCOL;<br>    url.port &#x3D; HTTPS_PORT;<br>    let path &#x3D; url.pathname.replace(&#x2F;^/&#x2F;, “”);<br>    path &#x3D; path.replace(&#x2F;/$&#x2F;, “”);<br>    const pathSegments &#x3D; path.split(“&#x2F;“);<br>    if (env.ALLOW_LIST_BUCKET !&#x3D;&#x3D; “true”) {<br>      if (env.BUCKET_NAME &#x3D;&#x3D;&#x3D; “$path” &amp;&amp; pathSegments.length &lt; 2 || env.BUCKET_NAME !&#x3D;&#x3D; “$path” &amp;&amp; path.length &#x3D;&#x3D;&#x3D; 0) {<br>        return new Response(null, {<br>          status: 404,<br>          statusText: “Not Found”<br>        });<br>      }<br>    }<br>    switch (env.BUCKET_NAME) {<br>      case “$path”:<br>        url.hostname &#x3D; env.B2_ENDPOINT;<br>        break;<br>      case “$host”:<br>        url.hostname &#x3D; url.hostname.split(“.”)[0] + “.” + env.B2_ENDPOINT;<br>        break;<br>      default:<br>        url.hostname &#x3D; env.BUCKET_NAME + “.” + env.B2_ENDPOINT;<br>        break;<br>    }<br>    const headers &#x3D; filterHeaders(request.headers, env);<br>    const endpointRegex &#x3D; &#x2F;^s3.([a-zA-Z0-9-]+).backblazeb2.com$&#x2F;;<br>    const [, aws_region] &#x3D; env.B2_ENDPOINT.match(endpointRegex);<br>    const client &#x3D; new AwsClient({<br>      “accesskeyID”: env.B2_APPLICATION_KEY_ID,<br>      “secretAccessKey”: env.B2_APPLICATION_KEY,<br>      “service”: “s3”,<br>      “region”: aws_region<br>    });<br>    const signedRequest &#x3D; await client.sign(url.toString(), {<br>      method: request.method,<br>      headers<br>    });<br>    if (signedRequest.headers.has(“range”)) {<br>      let attempts &#x3D; RANGE_RETRY_ATTEMPTS;<br>      let response;<br>      do {<br>        let controller &#x3D; new AbortController();<br>        response &#x3D; await fetch(signedRequest.url, {<br>          method: signedRequest.method,<br>          headers: signedRequest.headers,<br>          signal: controller.signal<br>        });<br>        if (response.headers.has(“content-range”)) {<br>          if (attempts &lt; RANGE_RETRY_ATTEMPTS) {<br>            console.log(<code>Retry for $&#123;signedRequest.url&#125; succeeded - response has content-range header</code>);<br>          }<br>          break;<br>        } else if (response.ok) {<br>          attempts -&#x3D; 1;<br>          console.error(<code>Range header in request for $&#123;signedRequest.url&#125; but no content-range header in response. Will retry $&#123;attempts&#125; more times</code>);<br>          if (attempts &gt; 0) {<br>            controller.abort();<br>          }<br>        } else {<br>          break;<br>        }<br>      } while (attempts &gt; 0);<br>      if (attempts &lt;&#x3D; 0) {<br>        console.error(<code>Tried range request for $&#123;signedRequest.url&#125; $&#123;RANGE_RETRY_ATTEMPTS&#125; times, but no content-range in response.</code>);<br>      }<br>      return response;<br>    }<br>    return fetch(signedRequest);<br>  }<br>};<br>export {<br>  my_proxy_default as default<br>};<br>&#x2F;*! Bundled license information:</p>
+<p>aws4fetch&#x2F;dist&#x2F;aws4fetch.esm.mjs:<br>  (**</p>
+<ul>
+<li>@license MIT <a target="_blank" rel="noopener" href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a></li>
+<li>@copyright Michael Hart 2022<br>   *)<br>*&#x2F;<br>&#x2F;&#x2F;# sourceMappingURL&#x3D;index.js.map&#96;&#96;&#96;  </div>
+</div>
+<!-- 代码块容器结束 --></li>
+</ul>
+<h3 id="第四步：配置-Cloudflare-Worker"><a href="#第四步：配置-Cloudflare-Worker" class="headerlink" title="第四步：配置 Cloudflare Worker"></a>第四步：配置 Cloudflare Worker</h3><p>部署成功后直接返回我们创建的 Worker 页面，依次点击<strong>设置</strong>-<strong>变量和机密</strong>-<strong>添加</strong> 。<br><img src="https://picx.zhimg.com/v2-f32352f368c78cd6fec06aa7acecac97_1440w.jpg" alt="添加变量"></p>
+<p>我们依次添加下面5个变量，变量 名称 和 值 分别为：</p>
+<ul>
+<li>ALLOW_LIST_BUCKET &#x3D; false  （这里的意思时是否允许输出文件目录，有要求也可以改成ture）</li>
+<li>B2_APPLICATION_KEY &#x3D; 第二步保存的 applicationKey</li>
+<li>B2_APPLICATION_KEY_ID &#x3D; 第二步保存的 keyID</li>
+<li>B2_ENDPOINT &#x3D; 创建桶时你的桶的 Endpoint 值（如我的是 s3.us-east-005.backblazeb2.com）</li>
+<li>BUCKET_NAME &#x3D; 私密桶名（如我的是 der-a-test-bucket）</li>
+</ul>
+<p><img src="https://pic4.zhimg.com/v2-954e9134ab9940a61c2a8a056703cf27_1440w.jpg" alt="变量加密"></p>
+<p>添加完后，结果如下图所示：<br><img src="https://pic3.zhimg.com/v2-863db1c249a363e1b3e3b83c5de0e1ce_1440w.jpg" alt="变量结果"></p>
+<h3 id="第五步：配置自定义域名访问（也可以不自定义域名，就用Cloudflare-Workers自带的域名）"><a href="#第五步：配置自定义域名访问（也可以不自定义域名，就用Cloudflare-Workers自带的域名）" class="headerlink" title="第五步：配置自定义域名访问（也可以不自定义域名，就用Cloudflare Workers自带的域名）"></a>第五步：配置自定义域名访问（也可以不自定义域名，就用Cloudflare Workers自带的域名）</h3><p>同样在<strong>设置</strong>，点击 <strong>域和路由</strong>-<strong>添加</strong> ，选择<strong>自定义域</strong><br><img src="https://pic4.zhimg.com/v2-bf70ffa64c49db5c091b1972dc220187_1440w.jpg" alt="自定义域"></p>
+<p>提示：自定义域名生效需要时间，大概需要10分钟到1个小时不等。</p>
+<h3 id="第六步：配置-Backblaze-B2-私密桶"><a href="#第六步：配置-Backblaze-B2-私密桶" class="headerlink" title="第六步：配置 Backblaze B2 私密桶"></a>第六步：配置 Backblaze B2 私密桶</h3><p>我们回到 Backblaze ，点击左侧一栏<strong>Bucket</strong>，定位到我们刚刚新建的私密桶，点击 <strong>Bucket Settings</strong> ：<br><img src="https://pica.zhimg.com/v2-46e90ece0b40f87c90d0f4c05f7d5be6_1440w.jpg" alt="Bucket Settings"></p>
+<p>在 Bucket Info 项填入：{“Cache-Control”: “public, max-age&#x3D;86400”}<br>最后点击 <strong>Update Bucket</strong> 按钮即可。<br><img src="https://picx.zhimg.com/v2-e8cfa99e8c31c710e60350cc9e103b81_1440w.jpg" alt="Bucket Info"></p>
+<h3 id="第七步：桶访问测试"><a href="#第七步：桶访问测试" class="headerlink" title="第七步：桶访问测试"></a>第七步：桶访问测试</h3><h4 id="7-1-上传图片到私密桶"><a href="#7-1-上传图片到私密桶" class="headerlink" title="7.1 上传图片到私密桶"></a>7.1 上传图片到私密桶</h4><p>我们再回到新建的私密桶，点击 <strong>Upload&#x2F;Download</strong> 按钮进入桶，然后点击 <strong>Upload</strong> 按钮上传一个图片（随意什么图片，用来测试而已）。<br><img src="https://pic4.zhimg.com/v2-1d53dcee67d5ff7829f67fe495bca401_1440w.jpg" alt="Upload/Download"></p>
+<p><img src="https://picx.zhimg.com/v2-78557e3a5ca9cce311a8ab1b277fd805_1440w.jpg" alt="Upload"></p>
+<h4 id="7-2-查看图片的-URL"><a href="#7-2-查看图片的-URL" class="headerlink" title="7.2 查看图片的 URL"></a>7.2 查看图片的 URL</h4><p>我们直接点击我们上传到桶里面图片，查看图片<br><img src="https://pic1.zhimg.com/v2-951342779a306556d3db726fc7f97b42_1440w.jpg" alt="查看图片"></p>
+<h4 id="7-3-访问图片"><a href="#7-3-访问图片" class="headerlink" title="7.3 访问图片"></a>7.3 访问图片</h4><p>然后我们直接访问图片的 S3 URL (如我的是<code>https://http://der-a-test-bucket.s3.us-east-005.backblazeb2.com/zhuzhuxiamenu.png</code>) ，可以发现我们是看不到图片的。<br><img src="https://pic2.zhimg.com/v2-aa5e7ca7f7363cc9bd3759f38021e649_1440w.jpg" alt="看不到图片"></p>
+<p>而当我们访问我们的worker（如我的是<code>https://test.2876563462.workers.dev/zhuzhuxiamenu.png</code>）或者我们配置的自定义域名时（如我的是<code>https://你的自定义域名/zhuzhuxiamenu.png</code>）则可以看到图片。（⚠️注意：在你的自定义域名设置好前，你是可以用worker自带的域名访问的，但在你的自定义域名设置好后，你就无法用worker的自带域名访问图片了）<br><img src="https://picx.zhimg.com/v2-3d80a9a14dad80355f25ae9ff9003ed5_1440w.jpg" alt="访问worker"></p>
+<p><img src="https://pica.zhimg.com/v2-abffa281cf6d731f9154ce089325d21a_1440w.jpg" alt="访问自定义域名"></p>
+<p>提示：若你的结果符合上述则说明 Cloudflare Worker 已经生效了。</p>
+<h3 id="第八步：配置-PicGo"><a href="#第八步：配置-PicGo" class="headerlink" title="第八步：配置 PicGo"></a>第八步：配置 PicGo</h3><p>这里PicGo可以搭配Typora一起使用，这样就可以通过复制图片的方式直接上传到图床。方法很简单，有兴趣可以看看下面的文章。<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/1933679535624282282">PicGo搭配Typora</a></p>
+<h4 id="8-1-安装-S3-插件"><a href="#8-1-安装-S3-插件" class="headerlink" title="8.1 安装 S3 插件"></a>8.1 安装 S3 插件</h4><p>点击左侧 <strong>插件设置</strong> ，搜索 S3 ，这里 s3 和 s3-lls 都可以，我选择的是 s3-lls ，点击<strong>安装</strong>。<br><img src="https://picx.zhimg.com/v2-c1f04ba8a6beb448d3df718bc8a6d907_1440w.jpg" alt="安装s3"></p>
+<h4 id="8-2-配置-Amazon-S3-图床"><a href="#8-2-配置-Amazon-S3-图床" class="headerlink" title="8.2 配置 Amazon S3 图床"></a>8.2 配置 Amazon S3 图床</h4><p>点击 <strong>图床设置</strong> - <strong>Amazon S3</strong> - <strong>编辑</strong> ，配置详情如下：<br><img src="https://pic1.zhimg.com/v2-9e39b11072944e6c1d42fdc203a995e2_1440w.jpg" alt="配置 Amazon S3 图床1"></p>
+<p><img src="https://pic4.zhimg.com/v2-29e9468fa69a724c369e5a94b4267fa7_1440w.jpg" alt="配置 Amazon S3 图床2"></p>
+<p>配置完后直接点击 <strong>确定</strong> 按钮即可。<br>注：上传路径可参考文件 <a target="_blank" rel="noopener" href="https://github.com/wayjam/picgo-plugin-s3">PicGo S3 插件</a> 内规则，我在上传前都会把图片按日期和文章命名好，你也可以选择默认的 {year}&#x2F;{month}&#x2F;{fullName}</p>
+<h4 id="8-3-上传测试"><a href="#8-3-上传测试" class="headerlink" title="8.3 上传测试"></a>8.3 上传测试</h4><p>点击左侧 <strong>上传区</strong> ，尝试上传图片。<br><img src="https://pic1.zhimg.com/v2-483af151deab2283ad12978b5b45c1a8_1440w.jpg" alt="picgo上传测试"></p>
+<p>上传后可点击左侧 <strong>相册</strong> 和回到我们的桶查看，均显示图片已上传。<br><img src="https://pic2.zhimg.com/v2-d6945f0ef8acff5111c505e5bc9b0725_1440w.jpg" alt="相册"></p>
+<p><img src="https://pica.zhimg.com/v2-d8e27a88883815819dc6d4d19a3fc784_1440w.jpg" alt="查看桶"></p>
+<h2 id="到这里我们的-cf＋b2-图床就搭建好了。"><a href="#到这里我们的-cf＋b2-图床就搭建好了。" class="headerlink" title="到这里我们的 cf＋b2 图床就搭建好了。"></a>到这里我们的 cf＋b2 图床就搭建好了。</h2><h3 id="需要注意的问题"><a href="#需要注意的问题" class="headerlink" title="需要注意的问题"></a>需要注意的问题</h3><p><strong>cloudflare的免费计划是有上限的</strong><br>A：cloudflare每天的免费请求只有100,000次，用超了如果你没有绑卡就会停，绑了卡就会自动扣费，即便超了价格还是很亲民的。</p>
+<p><strong>PicGo上传失败</strong><br>A：注意A3的配置里面的权限一定要填 private ，默认的 public-read Backblaze桶是识别不出来的</p>
 <blockquote>
-<p>欢迎访问我的博客或联系我交流！</p>
+<p>完整配置代码和更多细节也可参考我的<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/1933853673869517911">知乎原文</a></p>
 </blockquote>
 
       </section>
@@ -207,6 +507,7 @@
       
       
         <nav class="article-nav">
+          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
@@ -219,11 +520,10 @@
           <h2 class="card-text--title text-ellipsis">常用网站</h2>
         </a>
       
-      <div class="card-text--row">Newer</div>
+      <div class="card-text--row">Older</div>
     </div>
   </article>
 </div>
-          
           
         </nav>
       
