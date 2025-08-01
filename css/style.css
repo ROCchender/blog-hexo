@@ -1444,6 +1444,13 @@ html.show-mobile-nav .navbar-list {
   scrollbar-width: thin;
   scrollbar-color: #555 #f1f1f1;
 }
+.markdown-body pre[class*="language-"] {
+  background: transparent !important;
+  color: #333 !important;
+  border-radius: 0 !important;
+  max-height: 400px !important;
+  overflow-y: scroll !important;
+}
 /* Chrome, Edge 等 WebKit 浏览器自定义滚动条 */
 .code-content::-webkit-scrollbar {
   width: 8px;
