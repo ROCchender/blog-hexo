@@ -65,13 +65,6 @@
 
   
   <url>
-    <loc>https://chender.dpdns.org/tags/%E5%BD%B1%E8%A7%86%E3%80%81%E5%B7%A5%E5%85%B7%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2025-08-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://chender.dpdns.org/tags/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/</loc>
     <lastmod>2025-08-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -80,6 +73,13 @@
   
   <url>
     <loc>https://chender.dpdns.org/tags/%E5%85%B3%E4%BA%8E/</loc>
+    <lastmod>2025-08-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://chender.dpdns.org/tags/%E5%BD%B1%E8%A7%86%E3%80%81%E5%B7%A5%E5%85%B7%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2025-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -109,14 +109,14 @@
 
   
   <url>
-    <loc>https://chender.dpdns.org/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://chender.dpdns.org/categories/%E4%BB%8B%E7%BB%8D/</loc>
     <lastmod>2025-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://chender.dpdns.org/categories/%E4%BB%8B%E7%BB%8D/</loc>
+    <loc>https://chender.dpdns.org/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2025-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
