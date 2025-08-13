@@ -8,5 +8,10 @@ Host: api.indexnow.org
   "urlList": [
           "https://chender.dpdns.org/",
           "https://chender.dpdns.org/archives/"
+          "https://chender.dpdns.org/links/"
+          "https://chender.dpdns.org/about/"
+          "https://chender.dpdns.org/2025/08/07/%E7%BC%96%E7%A8%8B%E8%BD%AF%E4%BB%B6/"
+          "https://chender.dpdns.org/2025/08/01/%E5%9B%BE%E5%BA%8A%E9%80%89%E6%8B%A9or%E6%90%AD%E5%BB%BA/"
+          "https://chender.dpdns.org/2025/07/29/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/"
       ]
 }
