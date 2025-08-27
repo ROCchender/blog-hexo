@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://chender.dpdns.org/sitemap.xml
+Sitemap: https://blog.chender.dpdns.org/sitemap.xml
